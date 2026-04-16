@@ -1,0 +1,23 @@
+/* Efek Hover dan Animasi Kartu Produk */
+.product-card {
+    transition: all 0.3s ease;
+    border: 2px solid #e2e8f0;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
