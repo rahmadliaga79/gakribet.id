@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant - Solusi Produktivitas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-100 text-slate-800">
+
+    <div class="flex min-h-screen">
+        <aside class="w-64 bg-white border-r hidden md:block">
+            <div class="p-6">
+                <h1 class="text-xl font-bold text-blue-600">AI ASSISTANT</h1>
+            </div>
+            <nav class="mt-4 px-4 space-y-2">
+                <button onclick="showSection('home')" class="w-full text-left p-3 rounded-lg hover:bg-blue-50 transition"><i class="fas fa-home mr-3"></i> Home</button>
+                <button onclick="showSection('chat')" class="w-full text-left p-3 rounded-lg bg-blue-600 text-white shadow-md"><i class="fas fa-comments mr-3"></i> Chat AI</button>
+                <button onclick="showSection('pricing')" class="w-full text-left p-3 rounded-lg hover:bg-blue-50 transition"><i class="fas fa-tags mr-3"></i> Pricing</button>
+                <button onclick="showSection('dashboard')" class="w-full text-left p-3 rounded-lg hover:bg-blue-50 transition"><i class="fas fa-chart-line mr-3"></i> Dashboard</button>
+            </nav>
+        </aside>
+
+        <main class="flex-1 p-4 md:p-8 overflow-y-auto">
+    
+    <header class="flex justify-between items-center mb-8">
+        <div>
+            <h2 id="page-title" class="text-2xl font-bold text-slate-800">Chat AI Assistant</h2>
+            <p class="text-slate-500 text-sm">Gakribetid — Solusi produktivitas instan.</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <span class="text-xs font-semibold bg-green-100 text-green-600 px-3 py-1 rounded-full">System Online</span>
+            <div class="w-10 h-10 bg-slate-200 rounded-full border-2 border-white shadow-sm"></div>
+        </div>
+    </header>
+
+    <section id="chat-section" class="content-section ..."> 
+        </section>
+
+    <section id="dashboard-section" class="content-section hidden space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-blue-600 p-4 rounded-xl text-white shadow-lg">
+                <p class="text-xs opacity-80">Total Users</p>
+                <p class="text-2xl font-bold">1,250</p>
+            </div>
+            <div class="bg-indigo-600 p-4 rounded-xl text-white shadow-lg">
+                <p class="text-xs opacity-80">Total Chats</p>
+                <p class="text-2xl font-bold">8,940</p>
+            </div>
+            <div class="bg-emerald-500 p-4 rounded-xl text-white shadow-lg">
+                <p class="text-xs opacity-80">Active Today</p>
+                <p class="text-2xl font-bold">320</p>
+            </div>
+            <div class="bg-amber-500 p-4 rounded-xl text-white shadow-lg">
+                <p class="text-xs opacity-80">API Usage</p>
+                <p class="text-2xl font-bold">75%</p>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-xl border shadow-sm">
+            <h3 class="font-bold mb-4">User Activity</h3>
+            <div class="h-40 w-full bg-slate-50 rounded flex items-end justify-around p-2 gap-2">
+                <div class="bg-blue-400 w-full rounded-t" style="height: 40%"></div>
+                <div class="bg-blue-400 w-full rounded-t" style="height: 60%"></div>
+                <div class="bg-blue-600 w-full rounded-t" style="height: 90%"></div>
+                <div class="bg-blue-400 w-full rounded-t" style="height: 50%"></div>
+                <div class="bg-blue-400 w-full rounded-t" style="height: 75%"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-section" class="content-section hidden">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl border-2 hover:border-blue-500 transition shadow-sm text-center">
+                <span class="bg-slate-100 text-slate-600 px-4 py-1 rounded-full text-xs font-bold uppercase">Free</span>
+                <h3 class="text-2xl font-bold my-4 text-blue-600">Gratis</h3>
+                <ul class="text-sm text-slate-500 space-y-3 mb-6 text-left">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Chat terbatas</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Rekomendasi Dasar</li>
+                </ul>
+                <button class="w-full py-2 rounded-lg bg-blue-600 text-white font-bold">Mulai</button>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border-2 border-red-400 relative shadow-md text-center">
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-[10px] px-3 py-1 rounded-full font-bold">TERPOPULER</div>
+                <span class="bg-red-100 text-red-600 px-4 py-1 rounded-full text-xs font-bold uppercase">Pro</span>
+                <h3 class="text-2xl font-bold my-4 text-red-500">Rp xxx/bln</h3>
+                <ul class="text-sm text-slate-500 space-y-3 mb-6 text-left">
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Unlimited Chat</li>
+                    <li><i class="fas fa-check text-green-500 mr-2"></i> Fitur Tambahan</li>
+                </ul>
+                <button class="w-full py-2 rounded-lg bg-red-500 text-white font-bold">Upgrade</button>
+            </div>
+        </div>
+    </section>
+
+      </main>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
